@@ -25,7 +25,8 @@
               <li><a href="/logout" id="logout" class="btn">logout</a></li>
               <li><a href="/dashboard" class="btn">dashboard</a></li>
             {{else}}
-              <li><a href="/login" class="btn">login/signup</a></li>
+                <li><a href="#modal1" class="btn modal-trigger">Menu</a></li>
+                <li><a href="/login" class="btn">login/signup</a></li>
             {{/if}}
           </ul>
         </nav>
@@ -35,6 +36,16 @@
       <main class="center purple darken-4 white-text section">
         {{{body}}}
       </main>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <img src="../../public/assets/menu.jpg" alt="Menu" />
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        
       <footer class="footer center section">
         <h4 class="purple-text darken-3">Thanks for visiting!</h4>
       </footer>
